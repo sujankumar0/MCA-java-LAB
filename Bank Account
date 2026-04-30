@@ -1,0 +1,29 @@
+package sujan;
+
+import java.util.Scanner;
+
+public class BankAccount{
+	String name;
+	String accountType;
+	double balance;
+	
+	static int totalAccounts=0;
+	
+	BankAccount(String name){
+		this.name=name;
+		this.accountType="Savings";
+		this.balance=0;
+		totalAccounts++;
+	}
+	BankAccount(String name,double initialDeposit){
+		this.name=name;
+		this.accountType="Savings";
+		this.balance=initialDeposit;
+		totalAccounts++;
+	}
+	BankAccount(String name, double initialDeposit,String accountType){
+		this.name=name;
+		this.accountType=accountType;
+		this.balance=initialDeposit;
+		totalAccounts++;
+	}
