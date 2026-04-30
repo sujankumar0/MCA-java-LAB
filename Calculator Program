@@ -1,0 +1,77 @@
+package sujan;
+
+import java.util.Scanner;
+
+public class calculator {
+
+	static float result =0;
+	static int a;
+	static int b;
+	int choice;
+	public calculator(int a, int b)
+	{
+		this.a=a;
+		this.b=b;
+	}
+	
+	void Sum (int a, int b)//for addition
+	{ 
+		result =a+b;
+		System.out.println("the sum of two numbers is "+result);
+	}
+	void sub(int a, int b )//for subtraction
+	{
+		result =a-b;
+		System.out.println("the difference of two numbers is "+result);
+	}
+	void mul(int a, int b)//for multiplication
+	{	
+		result =a*b;
+		System.out.println("the product of two numbers is "+result);
+	}
+	void div(int a, int b)//for division
+	{		
+		if (b!=0)
+		{
+		result =a%b;
+		System.out.println("the remainder of two numbers is "+result);
+		}
+		else
+		{
+			System.out.println("you can't divide the number by zero ");
+		}
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		calculator obj1= new calculator(a,b);
+		Scanner sc = new Scanner (System.in);
+		System.out.println("Enter the first number");//for entering the first number 
+		int a = sc.nextInt();
+		System.out.println("Enter the second number");//for entering the second number 
+		int b =sc.nextInt();
+		System.out.println("1.ADDITION\n2.SUBTRACTION\n3.MULTIPLICATION\n4.DIVISION\n ");
+		System.out.println("Enter your choice");//for inputting choice by the user
+		int choice =sc.nextInt();
+		
+		switch(choice)
+		{
+			case 1:
+				obj1.Sum(a,b);
+				break;
+			case 2:
+				obj1.sub(a, b);
+				break;
+			case 3:
+				obj1.mul(a, b);
+				break;
+			case 4:
+				obj1.div(a,b);
+				break;
+			default:
+				System.out.println("invalid option");
+		
+		}
+		sc.close();
+	}
+}
