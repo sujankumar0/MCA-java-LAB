@@ -71,3 +71,15 @@ public static void main(String[]args) {
         String type=sc.nextLine();
         
         BankAccount acc=new BankAccount(name,deposit,type);
+  int choice;
+        
+        do {
+        	System.out.println("----Bank Menu----");
+        	System.out.println("1. Deposit(simple)");
+        	System.out.println("2.Deposit(With transaction type)");
+        	System.out.println("3.withdraw  ");
+        	System.out.println("4. Account details");
+        	System.out.println("5.Show Total Accounts");
+        	System.out.println("6.exit");
+        	System.out.println("Enter your choice:");
+        	choice=sc.nextInt();
