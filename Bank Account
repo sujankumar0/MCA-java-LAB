@@ -83,3 +83,40 @@ public static void main(String[]args) {
         	System.out.println("6.exit");
         	System.out.println("Enter your choice:");
         	choice=sc.nextInt();
+switch(choice) {
+        	case 1:
+        		   System.out.print("Enter amount:");
+        		   double amt =sc.nextDouble();
+        		   acc.deposit(amt);
+        		   break;
+        	case 2:
+        		System.out.print("Enter amount");
+        		double amount=sc.nextDouble();
+     		    System.out.print("Enter Deposit type cash/cheque/upi:");
+     		    String tx=sc.next ();
+     		    acc.deposit(amount,tx);
+     		    break;
+        	case 3:
+        		System.out.print("Enter amount to Withdraw");
+        		double w=sc.nextDouble();
+        		acc.withdraw(w);
+        		break;
+        	case 4:
+        		acc.displayAccount();
+        		break;
+        	case 5:
+        		BankAccount.showTotalAccounts();
+        		break;
+        	case 6:
+        		System.out.println("Exiting ");
+        		break;
+        		
+        		default :
+        			System.out.println("Invalid choice");
+        		
+        	}
+        }while(choice !=6);
+        sc.close();
+	}
+	
+}
