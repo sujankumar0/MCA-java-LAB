@@ -54,3 +54,20 @@ void deposit(double amount) {
 	static void showTotalAccounts() {
 		System.out.println("\n Total Account Credited:"+totalAccounts);
 	}
+public static void main(String[]args) {
+		
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.println("------Creat New Bank Account------");
+		
+		System.out.println("Enter name:");
+		String name=sc.nextLine();
+		
+		System.out.println("Enter Initial Deposit:");
+        double deposit=sc.nextDouble();
+        sc.nextLine();
+        
+        System.out.println("Enter AccountType(savings/current):");
+        String type=sc.nextLine();
+        
+        BankAccount acc=new BankAccount(name,deposit,type);
