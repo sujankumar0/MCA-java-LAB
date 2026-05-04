@@ -11,3 +11,13 @@ public class Circle {
         return Math.PI * radius * radius;
     }
 }
+package Main;
+
+import java.util.Scanner;
+import Shapes.Square;
+import Shapes.Traingle;
+import Shapes.Circle;
+
+public class MainClass {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
