@@ -11,7 +11,7 @@ public class Square {
         return side * side;
     }
 }
-
+//this code should be exicuted in the same package and different file
 package Shapes;
 
 public class Traingle {
