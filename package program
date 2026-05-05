@@ -40,24 +40,4 @@ public class Circle {
         return Math.PI * radius * radius;
     }
 }
-// from here the code should be exicuted in a complete new package and the previous package should be imported  
-package Main;
 
-import java.util.Scanner;
-import Shapes.Square;
-import Shapes.Traingle;
-import Shapes.Circle;
-
-public class MainClass {
-    public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-
-        int choice;
-        do {
-            System.out.println("\n====== AREA CALCULATOR ======");
-            System.out.println("1. Area of Square");
-            System.out.println("2. Area of Triangle");
-            System.out.println("3. Area of Circle");
-            System.out.println("4. Exit");
-            System.out.print("Enter your choice: ");
-            choice = sc.nextInt();
