@@ -40,7 +40,7 @@ public class Circle {
         return Math.PI * radius * radius;
     }
 }
- 
+// from here the code should be exicuted in a complete new package and the previous package should be imported  
 package Main;
 
 import java.util.Scanner;
