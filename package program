@@ -11,3 +11,18 @@ public class Square {
         return side * side;
     }
 }
+
+package Shapes;
+
+public class Traingle {
+    double base, height;
+
+    public Traingle(double base, double height) {
+        this.base = base;
+        this.height = height;
+    }
+
+    public double area() {
+        return 0.5 * base * height;
+    }
+}
