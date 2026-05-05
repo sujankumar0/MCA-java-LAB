@@ -12,6 +12,7 @@ public class Circle {
     }
 }
 
+// from here the code should be exicuted in a complete new package and the previous package should be imported  
 package Main;
 
 import java.util.Scanner;
@@ -22,7 +23,8 @@ import Shapes.Circle;
 public class MainClass {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
- int choice;
+
+        int choice;
         do {
             System.out.println("\n====== AREA CALCULATOR ======");
             System.out.println("1. Area of Square");
