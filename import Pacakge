@@ -33,3 +33,39 @@ public class MainClass {
             System.out.println("4. Exit");
             System.out.print("Enter your choice: ");
             choice = sc.nextInt();
+   case 1:
+                    System.out.print("Enter side of Square: ");
+                    double side = sc.nextDouble();
+                    Square sq = new Square(side);
+                    System.out.println("Area of Square = " + sq.area());
+                    break;
+
+                case 2:
+                    System.out.print("Enter base of Triangle: ");
+                    double base = sc.nextDouble();
+                    System.out.print("Enter height of Triangle: ");
+                    double height = sc.nextDouble();
+                    Traingle tr = new Traingle(base, height);
+                    System.out.println("Area of Triangle = " + tr.area());
+                    break;
+
+                case 3:
+                    System.out.print("Enter radius of Circle: ");
+                    double radius = sc.nextDouble();
+                    Circle cr = new Circle(radius);
+                    System.out.println("Area of Circle = " + cr.area());
+                    break;
+
+                case 4:
+                    System.out.println("Exiting...");
+                    break;
+
+                default:
+                    System.out.println("Invalid choice! Try again.");
+            }
+
+        } while (choice != 4);
+
+        sc.close();
+    }
+}
