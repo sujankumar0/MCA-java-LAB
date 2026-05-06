@@ -1,0 +1,10 @@
+package inheritenceprg5;
+import java.util.*;
+
+interface Personal {
+    void personalDetails();
+}
+
+interface Official {
+    void officialDetails();
+}
