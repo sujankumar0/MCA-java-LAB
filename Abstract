@@ -27,3 +27,15 @@ class Motorcycle implements Vehicle {
 		 System.out.println("tht bike engine is single stroke");
 	 }
 }
+public class VehicalDemo {
+    public static void main(String[] args) {
+        Vehicle v1 = new Car();
+        Vehicle v2 = new Motorcycle();
+        v1.drive();
+        v2.drive();
+        v1.start();
+        v2.start();
+        v1.engine();
+        v2.engine();
+    }
+}
