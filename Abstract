@@ -1,0 +1,18 @@
+package sujan;
+interface Vehicle {
+    void drive();
+    void start();
+    void engine();
+}
+
+class Car implements Vehicle {
+    public void drive() {
+        System.out.println("Car runs on 4 wheels");
+    }
+    public void start() {
+		System.out.println("The car starts with key ");
+		}
+	public void engine() {
+		System.out.println("the car engine has multiple strokes");
+	}
+}
