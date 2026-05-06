@@ -16,3 +16,14 @@ class Car implements Vehicle {
 		System.out.println("the car engine has multiple strokes");
 	}
 }
+class Motorcycle implements Vehicle {
+    public void drive() {
+        System.out.println("Motorcycle runs on 2 wheels");
+    }
+    public void start() {
+		 System.out.println("The motorcycle starts with kick");
+	 }
+	 public void engine() {
+		 System.out.println("tht bike engine is single stroke");
+	 }
+}
