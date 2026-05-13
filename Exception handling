@@ -1,0 +1,18 @@
+package sujan;
+import java.util.Scanner;
+
+class InvalidAgeException extends Exception {
+    public InvalidAgeException(String message) {
+        super(message);
+    }
+}
+
+public class ExceptionHandling {
+
+    // Method to validate age
+    public static void validateAge(int age) throws InvalidAgeException {
+        if (age < 18) {
+            throw new InvalidAgeException("Age must be 18 or above to access this service.");
+        }
+        System.out.println("Age is valid.");
+    }
